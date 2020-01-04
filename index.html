@@ -1,0 +1,54 @@
+<!DOCTYPE>
+<!-- This code is for demonstration purposes only.  You should not hotlink to Github, Rawgit, or files from the Cytoscape.js documentation in your production apps. -->
+<html>
+
+<head>
+  <title>Grid demo</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+  <link href="style.css" rel="stylesheet" />
+
+  <link href="cytoscape.js-panzoom.css" rel="stylesheet" type="text/css" />
+  <link href="font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css" />
+
+
+  <style>
+    /* makes sticky faster; disable if you want animated tippies */
+    .tippy-popper {
+      transition: none !important;
+    }
+    .tooltip {
+      text-align: left;
+    }
+  </style>
+
+  <!-- For loading external data files -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise,fetch"></script>
+
+  <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+  <script src="https://cdn.rawgit.com/cpettitt/dagre/v0.7.4/dist/dagre.min.js"></script>
+  <script src="https://cdn.rawgit.com/cytoscape/cytoscape.js-dagre/1.5.0/cytoscape-dagre.js"></script>
+
+  <script src="https://unpkg.com/popper.js@1.14.7/dist/umd/popper.js"></script>
+  <script src="cytoscape-popper.js"></script>
+  
+  <script src="https://unpkg.com/layout-base/layout-base.js"></script>
+		<script src="https://unpkg.com/avsdf-base/avsdf-base.js"></script>
+		<script src="cytoscape-avsdf.js"></script>
+
+	<script src="https://unpkg.com/tippy.js@4.0.1/umd/index.all.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/tippy.js@4.0.1/index.css" />
+
+  <!-- for testing with local version of cytoscape.js -->
+  <!-- <script src="../cytoscape.js/build/cytoscape.js"></script> -->
+</head>
+
+<body>
+  <h1>Grid demo</h1>
+  <div id="cy"></div>
+  <!-- Load application code at the end to ensure DOM is loaded -->
+  <script src="code.js"></script>
+  <!-- <script src="cytoscape-panzoom.js"></script> -->
+
+</body>
+
+</html>
